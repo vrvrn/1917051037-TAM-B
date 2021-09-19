@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.example.myflexiblefragment1037.OptionDialogFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hewan apa yang paling disukai aku?"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    <RadioGroup
+        android:id="@+id/rg_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RadioButton
+            android:id="@+id/rb_kl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kelinci"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+        <RadioButton
+            android:id="@+id/rb_hm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hamster"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+        <RadioButton
+            android:id="@+id/rb_kc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kucing"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+        <RadioButton
+            android:id="@+id/rb_pd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panda"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Tutup"
+            android:layout_marginRight="4dp" />
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Pilih"
+            android:layout_marginLeft="4dp" />
+    </LinearLayout>
+</LinearLayout>
